@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.hillel.library.BookDescriptionActivity">
+
+    <ImageView
+        android:id="@+id/ivCover"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_media_play"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivCover"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Book name"/>
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ivCover"
+        android:layout_below="@id/tvName"
+        android:textSize="18sp"
+        android:text="Author name"/>
+
+    <TextView
+        android:id="@+id/tvAnnotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivCover"
+        android:textSize="16sp"
+        android:text="Annotation"/>
+</RelativeLayout>
